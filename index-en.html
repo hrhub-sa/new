@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR Hub ‒ HR & Government Affairs Solutions</title>
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="glassmorphism.css">
+</head>
+<body>
+
+  <!-- Background container -->
+  <div id="background">
+    <div class="lines"></div>
+    <div class="dots"></div>
+  </div>
+
+  <!-- Floating & Lang & WhatsApp -->
+  <a id="lang-switch" href="index.html">AR</a>
+  <a href="https://wa.me/966530017278" class="floating-whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo-center">
+      <img src="new-logo.png" alt="HR Hub Logo" id="logo">
+    </div>
+    <nav>
+      <ul class="hub-switcher">
+        <li><button id="hrhub-btn" class="hub-btn active">HR Hub</button></li>
+        <li><button id="webhub-btn" class="hub-btn">Web Hub</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HR Hub Content -->
+  <div id="hrhub-content" class="hub-content active">
+    <!-- Slider -->
+    <div class="banner-slider">
+      <div class="slide active"><img src="qiwa.png" alt="QIWA"></div>
+      <div class="slide"><img src="absher.png" alt="Absher"></div>
+      <div class="slide"><img src="balady.png" alt="Balady"></div>
+      <div class="slide"><img src="gosi.png" alt="GOSI"></div>
+      <div class="slide"><img src="ministry.png" alt="Ministry of HRSD"></div>
+    </div>
+
+    <!-- Greeting -->
+    <section id="home" class="section greeting">
+      <h1>Welcome to HR Hub</h1>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <p>Innovative solutions for remote HR and Government Affairs management.</p>
+    </section>
+
+    <!-- Vision -->
+    <section id="vision" class="section">
+      <h1>Our Vision</h1>
+      <p>To be the ideal partner for companies on their journey to success through advanced and comprehensive HR and Government Affairs solutions.</p>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="section">
+      <h2 class="section-title">Service Packages</h2>
+      <div class="packages-grid">
+        <article class="package-card economy">
+          <h3>Economy Package</h3>
+          <div class="features">
+            <h4>Government Affairs</h4>
+            <ul>
+              <li>Full access & follow-up on all platforms</li>
+              <li>Activity updates & license transfers</li>
+              <li>Monitoring & renewal of official licenses</li>
+            </ul>
+          </div>
+          <div class="features">
+            <h4>HR Services</h4>
+            <ul>
+              <li>Payroll preparation & WPS submission</li>
+              <li>Employee registration on platforms</li>
+              <li>Issuing warnings & clearances</li>
+              <li>Employment contract creation</li>
+            </ul>
+          </div>
+          <div class="package-footer">
+            <span class="price">3000 SAR / mo</span>
+            <a href="#contact" class="btn">Subscribe</a>
+          </div>
+        </article>
+        <article class="package-card comprehensive">
+          <h3>Comprehensive Package</h3>
+          <div class="features">
+            <h4>Government Affairs</h4>
+            <ul>
+              <li>End-to-end entity & employee affairs</li>
+              <li>Platform management (QIWA, Absher, etc.)</li>
+              <li>License creation & renewal scheduling</li>
+              <li>Ongoing document monitoring</li>
+            </ul>
+          </div>
+          <div class="features">
+            <h4>HR Services</h4>
+            <ul>
+              <li>Contract management & daily HR tasks</li>
+              <li>Payroll & WPS justification</li>
+              <li>Policy & regulation development</li>
+              <li>Recruitment planning & follow-up</li>
+            </ul>
+          </div>
+          <div class="package-footer">
+            <span class="price">6000 SAR / mo</span>
+            <a href="#contact" class="btn">Subscribe</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Motto -->
+    <section id="motto" class="section">
+      <h2>Our Motto</h2>
+      <p>We guide you toward an exceptional business experience with the latest technical solutions and specialized services.</p>
+    </section>
+  </div>
+
+  <!-- Web Hub Content -->
+  <div id="webhub-content" class="hub-content">
+    <!-- Web Services Slider -->
+    <div class="banner-slider">
+      <div class="slide active">
+        <div class="web-service-card">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="web-service-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Mobile Apps</h3>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="web-service-card">
+          <i class="fas fa-shopping-cart"></i>
+          <h3>E-commerce</h3>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="web-service-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Management Systems</h3>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="web-service-card">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud Solutions</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Greeting -->
+    <section class="section greeting">
+      <h1>Welcome to Web Hub</h1>
+    </section>
+
+    <!-- About -->
+    <section class="section">
+      <p>Advanced technical solutions for developing websites, applications, and specialized software systems.</p>
+    </section>
+
+    <!-- Vision -->
+    <section class="section">
+      <h1>Our Vision</h1>
+      <p>To be leaders in providing innovative technical solutions and advanced websites that meet the needs of the digital age.</p>
+    </section>
+
+    <!-- Ready-Made Products -->
+    <section class="section">
+      <h2 class="section-title">Ready-Made Projects</h2>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3>Interactive Restaurant Menu</h3>
+          <p>Digital menu with WhatsApp order integration</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 3 days</span>
+            <span class="price">1,500 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-user-clock"></i>
+          </div>
+          <h3>Attendance Management System</h3>
+          <p>Employee attendance tracking with reports</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 7 days</span>
+            <span class="price">3,500 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-blog"></i>
+          </div>
+          <h3>Personal Blog Website</h3>
+          <p>Professional blog with admin panel</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 5 days</span>
+            <span class="price">2,200 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-building"></i>
+          </div>
+          <h3>Corporate Website</h3>
+          <p>Professional website for company services</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 4 days</span>
+            <span class="price">2,800 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
+          <h3>Simple E-commerce Store</h3>
+          <p>Online store with payment system</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 10 days</span>
+            <span class="price">5,500 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3>Appointment Booking System</h3>
+          <p>Booking system for clinics and salons</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 6 days</span>
+            <span class="price">3,200 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Learning Platform</h3>
+          <p>Website for courses and educational content</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 12 days</span>
+            <span class="price">6,800 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3>Real Estate Website</h3>
+          <p>Property listings with map integration</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 8 days</span>
+            <span class="price">4,500 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <h3>News Website</h3>
+          <p>News portal with content management</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 9 days</span>
+            <span class="price">4,200 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>Photography Portfolio</h3>
+          <p>Professional photo gallery website</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 4 days</span>
+            <span class="price">2,000 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3>Car Rental Website</h3>
+          <p>Online car booking and rental system</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 11 days</span>
+            <span class="price">5,800 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <h3>Gym Website</h3>
+          <p>Membership and workout scheduling</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 7 days</span>
+            <span class="price">3,800 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 13 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <h3>Task Management System</h3>
+          <p>Project and task organization for teams</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 8 days</span>
+            <span class="price">4,000 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 14 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <h3>Analytics Dashboard</h3>
+          <p>Data visualization and statistics</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 6 days</span>
+            <span class="price">3,600 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+
+        <!-- Product 15 -->
+        <div class="product-card">
+          <div class="product-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Customer Management System</h3>
+          <p>CRM for customer and sales management</p>
+          <div class="product-details">
+            <span class="duration"><i class="fas fa-clock"></i> 14 days</span>
+            <span class="price">7,500 SAR</span>
+          </div>
+          <a href="#contact" class="product-btn">Order Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Web Motto -->
+    <section class="section">
+      <h2>Our Motto</h2>
+      <p>We transform your digital ideas into advanced technical reality with the latest technologies and innovative software solutions.</p>
+    </section>
+  </div>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contactForm" class="contact-form">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <div id="responseMessage" class="message-box"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <p><i class="fas fa-phone"></i> <a href="tel:+966530017278">+966530017278</a></p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:hrhub.sa@gmail.com">hrhub.sa@gmail.com</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> Madinah, Saudi Arabia</p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 HR Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
